@@ -23,7 +23,7 @@ You should also run <tt>sudo mn -c</tt> and restart Mininet to make sure that ev
  $ sudo mn --topo single,3 --mac --controller remote --switch ovsk
 
 Newer mininet releases have POX preinstalled. If it's missing on your VM, or if you want a later version of POX, download it from the [https://github.com/noxrepo/pox POX repository on github] into your VM:
- $ git clone http://github.com/noxrepo/pox
+ $ git clone --depth 1 http://github.com/noxrepo/pox
  $ cd pox
 
 : '''OPTIONAL''': The above should get you the latest release branch of POX.  If you like the bleeding edge, you might like to switch to the latest development branch.  This is documented on the POX website, but as of this writing, it's the "betta" branch:
